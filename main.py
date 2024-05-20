@@ -8,7 +8,6 @@ def postponed_trigger(login_sndr):
         money = int(client_from_file(login_sndr)[5])
         postponed_tmp = {}
         # reading postponed payments from file to a temporary dictionary and execute postponed payments
-
         with open('postponed_payments/' + login_sndr + '.' + 'postponed.txt') as postponedfout:
             count = 0
             flag = 0
